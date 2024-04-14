@@ -15,7 +15,7 @@ function Sidebar() {
                     <li><a href="#">Attendence</a></li>
                 </ul>
             </div>
-            <button type="button" className='border rounded-xl p-3 bg-pastel_blue text-white'>Create Session</button>
+            <button type="button" className='border rounded-lg p-3 bg-pastel_blue text-white'>Create Session</button>
         </div>
      </section> 
     </>

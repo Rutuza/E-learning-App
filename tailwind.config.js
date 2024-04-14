@@ -10,7 +10,7 @@ export default {
         midnight_blue: "#121D28",
         pastel_blue: "#7197F9",
         pastel_pink: "#FF4773",
-        
+        light_navy: "#1A2531",
 
       }
     },
