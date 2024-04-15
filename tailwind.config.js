@@ -11,6 +11,7 @@ export default {
         pastel_blue: "#7197F9",
         pastel_pink: "#FF4773",
         light_navy: "#1A2531",
+        slate_blue: "#3F4662",
 
       }
     },
