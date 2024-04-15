@@ -6,6 +6,7 @@ import { BsBook } from "react-icons/bs";
 import { TfiWrite } from "react-icons/tfi";
 import { RiLiveLine } from "react-icons/ri";
 import { BsPersonCheck } from "react-icons/bs";
+import { GrAdd } from "react-icons/gr";
 
 function Sidebar() {
   return (
@@ -22,7 +23,10 @@ function Sidebar() {
                     <li className='w-full p-3 text-slate_blue text-md hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><BsPersonCheck /><div>Attendence</div></a></li>
                 </ul>
             </div>
-            <button type="button" className='bg-pastel_blue h-12 w-full rounded-lg absolute bottom-0'>Create Session</button>
+            <button type="button" className='bg-pastel_blue h-12 w-full rounded-lg absolute bottom-0 flex items-center justify-center gap-4 font-medium'>
+                <div>Create Session</div>
+                <GrAdd/>
+            </button>
         </nav>
      </aside> 
     </>
