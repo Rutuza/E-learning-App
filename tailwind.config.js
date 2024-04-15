@@ -13,7 +13,7 @@ export default {
         light_navy: "#1A2531",
         slate_blue: "#3F4662",
 
-      }
+      },
     },
   },
   plugins: [],
