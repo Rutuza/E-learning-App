@@ -1,10 +1,11 @@
 import React from 'react';
 
-import block from '../assets/icons/blocks.svg';
-import book from '../assets/icons/book.svg';
-import bookwithpen from '../assets/icons/bookwithpen.svg';
-import camera from '../assets/icons/camera.svg';
-import person from '../assets/icons/person-done.svg';
+
+import { RxDashboard } from "react-icons/rx";
+import { BsBook } from "react-icons/bs";
+import { TfiWrite } from "react-icons/tfi";
+import { RiLiveLine } from "react-icons/ri";
+import { BsPersonCheck } from "react-icons/bs";
 
 function Sidebar() {
   return (
@@ -14,11 +15,11 @@ function Sidebar() {
             <div className="logo text-3xl font-semibold absolute top-0">Codaf<span className='text-[#FF4773]'>fix</span></div>
             <div className='wrapper'>
                 <ul>
-                    <li className='w-full p-3 text-slate_blue text-lg hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><img src={block} alt="" srcset="" /><div>Dashboard</div></a></li>
-                    <li className='w-full p-3 text-slate_blue text-lg hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><img src={book} alt="" srcset="" /><div>My Courses</div></a></li>
-                    <li className='w-full p-3 text-slate_blue text-lg hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><img src={bookwithpen} alt="" srcset="" /><div>Assignments</div></a></li>
-                    <li className='w-full p-3 text-slate_blue text-lg hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><img src={camera} alt="" srcset="" /><div>Discussions</div></a></li>
-                    <li className='w-full p-3 text-slate_blue text-lg hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><img src={person} alt="" srcset="" /><div>Attendence</div></a></li>
+                    <li className='w-full p-3 text-slate_blue text-md hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><RxDashboard /><div>Dashboard</div></a></li>
+                    <li className='w-full p-3 text-slate_blue text-md hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><BsBook /><div>My Courses</div></a></li>
+                    <li className='w-full p-3 text-slate_blue text-md hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><TfiWrite /><div>Assignments</div></a></li>
+                    <li className='w-full p-3 text-slate_blue text-md hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><RiLiveLine /><div>Discussions</div></a></li>
+                    <li className='w-full p-3 text-slate_blue text-md hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><BsPersonCheck /><div>Attendence</div></a></li>
                 </ul>
             </div>
             <button type="button" className='bg-pastel_blue h-12 w-full rounded-lg absolute bottom-0'>Create Session</button>
