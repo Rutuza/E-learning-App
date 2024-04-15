@@ -23,7 +23,7 @@ function Sidebar() {
                     <li className='p-3 text-slate_blue text-lg hover:bg-pastel_blue hover:text-white'><a href="#" className='flex items-center justify-center gap-3'><BsPersonCheck /><div>Attendence</div></a></li>
                 </ul>
             </div>
-            <button type="button" className='bg-pastel_blue h-12 w-full rounded-lg absolute bottom-0 flex items-center justify-center gap-4 font-medium'>
+            <button type="button" className='bg-pastel_blue h-12 w-full rounded-lg absolute bottom-0 flex items-center justify-center gap-4 font-medium text-white'>
                 <div>Create Session</div>
                 <GrAdd/>
             </button>
