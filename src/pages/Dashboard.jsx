@@ -5,7 +5,7 @@ function Dashboard() {
   return (
     <>
       <div className='relative bg-midnight_blue'>
-        <Sidebar></Sidebar>
+        {/* <Sidebar></Sidebar> */}
 
         <header className='flex items-center absolute left-72'>
           <div>Dashboard</div>

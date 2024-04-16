@@ -12,6 +12,7 @@ export default {
         pastel_pink: "#FF4773",
         light_navy: "#1A2531",
         slate_blue: "#3F4662",
+        crimson: "#FF4773",
 
       },
     },
