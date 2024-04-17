@@ -4,6 +4,7 @@ import { BsBook } from "react-icons/bs";
 import { TfiWrite } from "react-icons/tfi";
 import { RiLiveLine } from "react-icons/ri";
 import { BsPersonCheck } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 // import { GrAdd } from "react-icons/gr";
 // import { IconBase } from 'react-icons/lib';
 
@@ -43,43 +44,40 @@ import { BsPersonCheck } from "react-icons/bs";
 
 function Sidebar() {
   return (
-    <div className='d-flex flex-column bg-dark text-white p-2'>
-      <a href="d-flex align-items-center">
-        <i className='bi bi-bootstrap fs-5 me-2'></i>
-        <span className='fs-4'>Sidebar</span>
-      </a>
+    <div className='d-flex flex-column bg-midnight_blue h-screen w-60 text-white p-2 '>
+      <div className='text-3xl font-medium'>Codaf<span className='text-[#FF4773]'>fix</span></div>
       <hr className='text-secondary'/>
 
-      <ul className='nav nav-pills flex-column'>
-        <li className=''>
-          <a href="" className='flex items-center gap-3'>
+      <ul className='grid grid-flow-row'>
+        <li className='p-3'>
+          <Link to="/" className='flex items-center gap-3'>
             <i><RxDashboard></RxDashboard></i>
             <span>Dashboard</span>
-          </a>
+          </Link>
         </li>
-        <li className='nav-item'>
-          <a href="" className='flex items-center gap-3'>
+        <li className='p-3'>
+          <Link to="mycourses" className='flex items-center gap-3'>
             <i><BsBook></BsBook></i>
             <span>My courses</span>
-          </a>
+          </Link>
         </li>
-        <li className='nav-item'>
-          <a href="" className='flex items-center gap-3'>
+        <li className='p-3'>
+          <Link to="assignments" className='flex items-center gap-3'>
             <i><TfiWrite></TfiWrite></i>
             <span>Assignments</span>
-          </a>
+          </Link>
         </li>
-        <li className='nav-item'>
-          <a href="" className='flex items-center gap-3'>
+        <li className='p-3'>
+          <Link to="discussions" className='flex items-center gap-3'>
             <i><RiLiveLine></RiLiveLine></i>
             <span>Discussion</span>
-          </a>
+          </Link>
         </li>
-        <li className='nav-item'>
-          <a href="" className='flex items-center gap-3'>
+        <li className='p-3'>
+          <Link to="attendance" className='flex items-center gap-3'>
             <i><BsPersonCheck></BsPersonCheck></i>
             <span>Attendance</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

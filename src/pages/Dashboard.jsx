@@ -5,8 +5,6 @@ function Dashboard() {
   return (
     <>
       <div className='relative bg-midnight_blue'>
-        {/* <Sidebar></Sidebar> */}
-
         <header className='flex items-center absolute left-72'>
           <div>Dashboard</div>
           <input type="search" name="" id="" placeholder='Search for Courses, Lectures, Tutorials...' className='text-xs border-2 rounded-full p-2 w-96'/>

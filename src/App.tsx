@@ -12,24 +12,22 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div>
-      <div className="d-flex">
-        <div className="col-auto">
-          <Sidebar />
-        </div>
+    <BrowserRouter>
+    <div className='d-flex'>
+      <div className='col-auto'>
+        <Sidebar />
       </div>
-        {/* <BrowserRouter>
-          
-            <Routes>
-              <Route path='/' element={<Dashboard />} />
-              <Route path='mycourses' element={<Courses />} />
-              <Route path='assignments' element={<Assignments />} />
-              <Route path='discussions' element={<Discussions />} />
-              <Route path='attendance' element={<Attendance />} />
-            </Routes>
-        </BrowserRouter> */}
-      
+      <div>
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/mycourses' element={<Courses />}/>
+          <Route path='/assignments' element={<Assignments />} />
+          <Route path='/discussions' element={<Discussions />} />
+          <Route path='/attendance' element={<Attendance />} />
+        </Routes>
+      </div>
     </div>
+    </BrowserRouter>
   
   )
 }
