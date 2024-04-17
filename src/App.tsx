@@ -1,13 +1,25 @@
 import React from 'react'
 import './App.css'
-import Sidebar from './components/Sidebar'
-import Dashboard from './pages/Dashboard'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import Courses from './pages/Courses';
+import Assignments from './pages/Assignments';
+import Discussions from './pages/Discussions';
+import Attendance from './pages/Attendance';
 
 function App() {
   return (
     <div>
-      {/* <Dashboard></Dashboard> */}
-      <div><Sidebar></Sidebar></div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+          <Route path='mycourses' element={<Courses />}/>
+          <Route path='assignments' element={<Assignments/>}/>
+          <Route path='discussions' element={<Discussions/>}/>
+          <Route path='attendance' element={<Attendance/>}/>
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   
   )
