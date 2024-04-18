@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { RxDashboard } from "react-icons/rx";
 import { BsBook } from "react-icons/bs";
 import { TfiWrite } from "react-icons/tfi";
 import { RiLiveLine } from "react-icons/ri";
 import { BsPersonCheck } from "react-icons/bs";
-import { Link } from 'react-router-dom';
-// import { GrAdd } from "react-icons/gr";
+
 // import { IconBase } from 'react-icons/lib';
 
 // const Sidebar = () => {
@@ -39,17 +40,14 @@ import { Link } from 'react-router-dom';
 // }
 
 // export default Sidebar;
-
-
-
 function Sidebar() {
   return (
-    <div className='d-flex flex-column bg-midnight_blue h-screen w-60 text-white p-2 '>
+    <div className='bg-light_navy h-screen w-60 text-white'>
       <div className='text-3xl font-medium'>Codaf<span className='text-[#FF4773]'>fix</span></div>
-      <hr className='text-secondary'/>
+      
 
-      <ul className='grid grid-flow-row'>
-        <li className='p-3'>
+      <ul className='grid grid-flow-row justify-center'>
+        <li className='p-3 hover:bg-pastel_pink w-full'>
           <Link to="/" className='flex items-center gap-3'>
             <i><RxDashboard></RxDashboard></i>
             <span>Dashboard</span>
@@ -80,6 +78,13 @@ function Sidebar() {
           </Link>
         </li>
       </ul>
+
+      <button type="button" className='border-2 p-2.5 rounded-xl bg-pastel_blue'>
+        <div className='flex items-center gap-3 justify-center'>
+          <div>Create Session</div>
+          <i>+</i>
+        </div>
+      </button>
     </div>
   );
 }
