@@ -17,7 +17,7 @@ function App() {
       <div className='col-auto'>
         <Sidebar />
       </div>
-      <div>
+      
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/mycourses' element={<Courses />}/>
@@ -25,8 +25,9 @@ function App() {
           <Route path='/discussions' element={<Discussions />} />
           <Route path='/attendance' element={<Attendance />} />
         </Routes>
-      </div>
+        
     </div>
+    
     </BrowserRouter>
   
   )

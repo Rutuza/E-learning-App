@@ -49,7 +49,7 @@ function Sidebar() {
       <ul className=''>
         <li className='p-3 hover:bg-pastel_pink w-full'>
           <Link to="/" className='flex items-center gap-3'>
-            <i><RxDashboard></RxDashboard></i>
+            <i><RxDashboard /></i>
             <span>Dashboard</span>
           </Link>
         </li>
