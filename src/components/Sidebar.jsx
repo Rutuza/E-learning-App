@@ -42,36 +42,36 @@ import { BsPersonCheck } from "react-icons/bs";
 // export default Sidebar;
 function Sidebar() {
   return (
-    <div className='bg-light_navy h-screen w-60 text-white'>
+    <div className='relative bg-light_navy h-screen w-60 text-white grid grid-flow-row p-2'>
       <div className='text-3xl font-medium'>Codaf<span className='text-[#FF4773]'>fix</span></div>
       
 
-      <ul className='grid grid-flow-row justify-center'>
+      <ul className=''>
         <li className='p-3 hover:bg-pastel_pink w-full'>
           <Link to="/" className='flex items-center gap-3'>
             <i><RxDashboard></RxDashboard></i>
             <span>Dashboard</span>
           </Link>
         </li>
-        <li className='p-3'>
+        <li className='p-3 hover:bg-pastel_pink w-full'>
           <Link to="mycourses" className='flex items-center gap-3'>
             <i><BsBook></BsBook></i>
             <span>My courses</span>
           </Link>
         </li>
-        <li className='p-3'>
+        <li className='p-3 hover:bg-pastel_pink w-full'>
           <Link to="assignments" className='flex items-center gap-3'>
             <i><TfiWrite></TfiWrite></i>
             <span>Assignments</span>
           </Link>
         </li>
-        <li className='p-3'>
+        <li className='p-3 hover:bg-pastel_pink w-full'>
           <Link to="discussions" className='flex items-center gap-3'>
             <i><RiLiveLine></RiLiveLine></i>
             <span>Discussion</span>
           </Link>
         </li>
-        <li className='p-3'>
+        <li className='p-3 hover:bg-pastel_pink w-full'>
           <Link to="attendance" className='flex items-center gap-3'>
             <i><BsPersonCheck></BsPersonCheck></i>
             <span>Attendance</span>
@@ -79,8 +79,8 @@ function Sidebar() {
         </li>
       </ul>
 
-      <button type="button" className='border-2 p-2.5 rounded-xl bg-pastel_blue'>
-        <div className='flex items-center gap-3 justify-center'>
+      <button type="button" className='border-2 w-full h-16 rounded-xl bg-pastel_blue'>
+        <div className='flex items-center gap-3 justify-center text-lg'>
           <div>Create Session</div>
           <i>+</i>
         </div>
