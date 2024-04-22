@@ -4,7 +4,8 @@ import bell from '../assets/icons/bell.svg';
 import settings from '../assets/icons/settings.svg';
 import help from '../assets/icons/help icon.svg';
 import avatar from '../assets/icons/avatar-figma 1.svg';
-import { Dropdown } from 'bootstrap';
+import Actvty from '../components/Actvty';
+
 
 function Dashboard() {
   return (
@@ -28,9 +29,8 @@ function Dashboard() {
           <div className="subtitle text-xs mt-2 ml-1">You are doing great, keep it up...</div>
         </div>
 
-        <div className='rank bg-red-400 w-72 h-72'>
-          <div className="text-md font-medium">Credit Score Ranking</div>
-          <button type="button"></button>
+        <div>
+          <Actvty />
         </div>
         
      </div>
