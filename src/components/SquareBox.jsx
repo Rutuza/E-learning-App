@@ -2,7 +2,7 @@ import React from 'react';
 
 function SquareBox() {
   return (
-    <div className='bg-red-400 w-12 h-12 rounded-md'>
+    <div className='bg-slate_blue w-11 h-11 rounded-md'>
       
     </div>
   );

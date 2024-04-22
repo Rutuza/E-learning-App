@@ -7,11 +7,11 @@ function Actvty() {
     <div>
       <div className="title">Activity</div>
       <div className='mt-3'>
-        <div className='bg-light_navy w-80 h-16 p-2'>
-            <div className='flex gap-2'>
-                <SquareBox />
-                <Act_content></Act_content>
-            </div>
+        <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
+            <div className='flex gap-4'>
+                <div><SquareBox /></div>
+                <div><Act_content /></div>
+            </div> 
         </div>
       </div>
     </div>
