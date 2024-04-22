@@ -31,6 +31,7 @@ function Dashboard() {
 
         <div>
           <Actvty />
+          
         </div>
         
      </div>
