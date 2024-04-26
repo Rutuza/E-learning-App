@@ -5,7 +5,9 @@ import settings from '../assets/icons/settings.svg';
 import help from '../assets/icons/help icon.svg';
 import avatar from '../assets/icons/avatar-figma 1.svg';
 import Actvty from '../components/Actvty';
-import C_card from '../components/C_card';
+import C_card from '../components/Course cards/Essential_crd';
+import Essential_crd from '../components/Course cards/Essential_crd';
+import Adv_crd from '../components/Course cards/Adv_crd';
 
 
 function Dashboard() {
@@ -37,7 +39,8 @@ function Dashboard() {
           </div>
           <div>
             <div>Courses</div>
-            <C_card />
+            <Essential_crd/>
+            <Adv_crd/>
           </div>
 
           
