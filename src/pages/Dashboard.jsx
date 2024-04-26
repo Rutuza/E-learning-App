@@ -8,6 +8,7 @@ import Actvty from '../components/Actvty';
 import C_card from '../components/Course cards/Essential_crd';
 import Essential_crd from '../components/Course cards/Essential_crd';
 import Adv_crd from '../components/Course cards/Adv_crd';
+import Frontend_dev from '../components/Continue course cards/Frontend_dev';
 
 
 function Dashboard() {
@@ -49,13 +50,16 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className='mt-4'> {}
+        <div className='mt-8'> {}
           <div className='flex items-center justify-between'>
             <div className='font-medium text-xl'>Continue classes</div>
             <div className='text-xs text-blue-500'><u><a href="">See all</a></u></div>
           </div>
         </div>
         
+        <div>
+          <Frontend_dev/>
+        </div>
      </div>
     </>
   );
