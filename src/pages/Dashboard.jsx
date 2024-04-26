@@ -32,18 +32,28 @@ function Dashboard() {
           <div className="subtitle text-xs mt-2 ml-1">You are doing great, keep it up...</div>
         </div>
 
-        <div className='flex flex-row gap-4'>
-          <div>
-            <div>Activity</div>
+        <div className='flex flex-row gap-16'>
+          <div className='activity'>
+            <div className='font-medium text-xl'>Activity</div>
             <Actvty />
           </div>
-          <div>
-            <div>Courses</div>
+
+          <div className='courses'>
+            <div className='text-xl font-medium'>Courses</div>
             <Essential_crd/>
             <Adv_crd/>
           </div>
 
-          
+          <div className='ranking'>
+            <div className="title text-xl font-medium">Credit score ranking</div>
+          </div>
+        </div>
+
+        <div className='mt-4'> {}
+          <div className='flex items-center justify-between'>
+            <div className='font-medium text-xl'>Continue classes</div>
+            <div className='text-xs text-blue-500'><u><a href="">See all</a></u></div>
+          </div>
         </div>
         
      </div>
