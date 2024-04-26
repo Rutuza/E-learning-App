@@ -5,6 +5,7 @@ import settings from '../assets/icons/settings.svg';
 import help from '../assets/icons/help icon.svg';
 import avatar from '../assets/icons/avatar-figma 1.svg';
 import Actvty from '../components/Actvty';
+import C_card from '../components/C_card';
 
 
 function Dashboard() {
@@ -29,8 +30,16 @@ function Dashboard() {
           <div className="subtitle text-xs mt-2 ml-1">You are doing great, keep it up...</div>
         </div>
 
-        <div>
-          <Actvty />
+        <div className='flex flex-row gap-4'>
+          <div>
+            <div>Activity</div>
+            <Actvty />
+          </div>
+          <div>
+            <div>Courses</div>
+            <C_card />
+          </div>
+
           
         </div>
         
