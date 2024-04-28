@@ -8,13 +8,12 @@ import Actvty from '../components/Actvty';
 import C_card from '../components/Course cards/Essential_crd';
 import Essential_crd from '../components/Course cards/Essential_crd';
 import Adv_crd from '../components/Course cards/Adv_crd';
-import Frontend_dev from '../components/Continue course cards/Frontend_dev';
-
+import Card from '../components/Card';
 
 function Dashboard() {
   return (
     <>
-     <div className=' bg-midnight_blue w-full text-white p-3.5'>
+     <div className=' bg-midnight_blue w-full h-full text-white p-3.5'>
         <header className='flex items-center justify-between'>
           <div className="title text-pastel_blue text-xl font-medium">Dashboard</div>
           <input type="search" name="" id="" className='rounded-full w-2/5 h-8 text-xs bg-transparent border-1 p-3' placeholder='Search for best Lectures, Tutorials, Courses...'/>
@@ -50,16 +49,17 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className='mt-8'> {}
+        <div className='mt-8'>
           <div className='flex items-center justify-between'>
             <div className='font-medium text-xl'>Continue classes</div>
             <div className='text-xs text-blue-500'><u><a href="">See all</a></u></div>
           </div>
+
+          <div className='mt-4'>
+            <Card/>
+          </div>
         </div>
-        
-        <div>
-          <Frontend_dev/>
-        </div>
+
      </div>
     </>
   );
