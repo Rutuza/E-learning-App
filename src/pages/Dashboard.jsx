@@ -55,8 +55,11 @@ function Dashboard() {
             <div className='text-xs text-blue-500'><u><a href="">See all</a></u></div>
           </div>
 
-          <div className='mt-4'>
+          <div className='mt-4 flex flex-wrap gap-4'>
             <Card/>
+            <Card/> 
+            <Card/>
+            
           </div>
         </div>
 
