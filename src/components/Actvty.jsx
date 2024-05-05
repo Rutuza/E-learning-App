@@ -1,6 +1,8 @@
 import React from 'react';
 import SquareBox from './SquareBox';
-import Act_content from './Act_content';
+import Act_content from './Submit';
+import Submit from './Submit';
+import Participate from './Dashboard Contents/Actvity/Participate';
 
 function Actvty() {
   return (
@@ -8,25 +10,25 @@ function Actvty() {
         <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
             <div className='flex gap-4'>
                 <div><SquareBox /></div>
-                <div><Act_content /></div>
+                <div><Submit/></div>
             </div> 
         </div>
         <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
             <div className='flex gap-4'>
                 <div><SquareBox /></div>
-                <div><Act_content /></div>
+                <div></div>
             </div> 
         </div>
         <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
             <div className='flex gap-4'>
                 <div><SquareBox /></div>
-                <div><Act_content /></div>
+                <div></div>
             </div> 
         </div>
         <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
             <div className='flex gap-4'>
                 <div><SquareBox /></div>
-                <div><Act_content /></div>
+                <div></div>
             </div> 
         </div>
       </div>

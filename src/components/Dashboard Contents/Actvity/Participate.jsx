@@ -1,12 +1,12 @@
 import React from 'react';
-import Due_btn from './Due_btn';
+import Done_btn from '../../Buttons/Done_btn';
 
-function Act_content() {
+function Participate() {
   return (
     <div>
       <div className='flex items-center gap-16'>
-        <div className='text-sm'>Submit assignment</div>
-        <button type="button"><Due_btn /></button>
+        <div className='text-sm'>Participate in discussions</div>
+        <button type="button"><Done_btn/></button>
       </div>
 
       <div className="date_time mt-2 text-xs text-gray-300 flex justify-between">
@@ -17,4 +17,4 @@ function Act_content() {
   );
 }
 
-export default Act_content;
+export default Participate;
