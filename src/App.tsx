@@ -13,18 +13,20 @@ import Sidebar from './components/Sidebar';
 function App() {
   return (
     <BrowserRouter>
-    <div className='d-flex'>
-      <div className='col-auto'>
+    <div className='flex flex-col'>
+      <div className='fixed w-80'>
         <Sidebar />
       </div>
       
-        <Routes>
+       <div className=''>
+       <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='/mycourses' element={<Courses />}/>
           <Route path='/assignments' element={<Assignments />} />
           <Route path='/discussions' element={<Discussions />} />
           <Route path='/attendance' element={<Attendance />} />
-        </Routes>
+      </Routes>
+       </div>
         
     </div>
     

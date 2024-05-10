@@ -14,18 +14,14 @@ function Actvty() {
                 <div><Submit/></div>
             </div> 
         </div>
+        
         <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
             <div className='flex items-center justify-between w-full'>
                 <div><SquareBox /></div>
                 <div><Participate/></div>
             </div> 
         </div>
-        <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
-            <div className='flex items-center justify-between w-full'>
-                <div><SquareBox /></div>
-                <div><Quiz/></div>
-            </div> 
-        </div>
+      
         <div className='bg-light_navy w-80 h-16 relative flex items-center justify-center rounded-md'>
             <div className='flex items-center justify-between w-full'>
                 <div><SquareBox /></div>

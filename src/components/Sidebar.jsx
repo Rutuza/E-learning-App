@@ -48,6 +48,7 @@ function Sidebar() {
           </li>
         </ul>
       </div>
+      
       <CreateSessionBtn />
     </div>
   );
