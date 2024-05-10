@@ -11,12 +11,12 @@ import AppName from './AppName';
 
 function Sidebar() {
   return (
-    <div className='w-60 '>
+    <div className='w-60 grid grid-flow-row items-center justify-center gap-20'>
       <AppName />
       
       <div className='py-3'>
-        <ul className='text-slate_blue grid grid-flow-row items-center justify-center gap-4 w-full'>
-          <li className='hover:bg-pastel_pink w-full hover:rounded-md'>
+        <ul className='grid grid-flow-row gap-4 items-center'>
+          <li className='hover:bg-pastel_pink hover:rounded-md'>
             <Link to="/" className='flex items-center gap-3 hover:text-white'>
               <i><RxDashboard /></i>
               <span>Dashboard</span>
@@ -47,9 +47,8 @@ function Sidebar() {
             </Link>
           </li>
         </ul>
-
-        <CreateSessionBtn/>
       </div>
+      <CreateSessionBtn />
     </div>
   );
 }

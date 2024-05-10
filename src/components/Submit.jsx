@@ -4,8 +4,8 @@ import Due_btn from './Buttons/Due_btn';
 function Submit() {
   return (
     <div>
-      <div className='flex items-center gap-16'>
-        <div className='text-sm'>Submit assignment</div>
+      <div className='flex gap-20'>
+        <div>Submit assignment</div>
         <button type="button"><Due_btn /></button>
       </div>
 
