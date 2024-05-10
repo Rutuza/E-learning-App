@@ -7,11 +7,12 @@ import { TfiWrite } from "react-icons/tfi";
 import { RiLiveLine } from "react-icons/ri";
 import { BsPersonCheck } from "react-icons/bs";
 import CreateSessionBtn from './Buttons/CreateSessionBtn';
+import AppName from './AppName';
 
 function Sidebar() {
   return (
     <div className='w-60 '>
-      <div className='text-3xl font-medium'>Codaf<span className='text-[#FF4773]'>fix</span></div>
+      <AppName />
       
       <div className='py-3'>
         <ul className='text-slate_blue grid grid-flow-row items-center justify-center gap-4 w-full'>
