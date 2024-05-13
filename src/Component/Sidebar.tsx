@@ -7,7 +7,7 @@ import { TfiWrite } from "react-icons/tfi";
 import { BsCameraVideo } from "react-icons/bs";
 import { LuUserCheck2 } from "react-icons/lu";
 
-function Sidebar() {
+export default function Sidebar() {
   const Navlinks = [
     {
       title: "Dashboard",
@@ -26,29 +26,28 @@ function Sidebar() {
       icon: <BsCameraVideo />,
     },
     {
-      title: "Discussions",
+      title: "Attendance",
       icon: <LuUserCheck2 />,
     },
   ];
 
   return (
     <>
-      <div className="w-60 h-screen bg-darkprimary flex flex-col overflow-hidden text-white justify-between items-center fixed">
-        <h1 className="text-2xl font-medium">Codeaffix</h1>
+      <div className="w-60 h-screen bg-darkprimary flex flex-col overflow-hidden justify-between items-center fixed border-grey border-r-2 rounded-tr-[3.5rem] rounded-br-[3.5rem]">
+        <h1 className="text-2xl font-medium text-white">Study<span className="text-reddishpink">Room</span></h1>
         <ul className="w-full">
           {Navlinks.map((item, index) => (
-            <li key={index} className="p-2 hover:bg-pink-600 w-full">
-              <div className="flex items-center">
+            <li key={index} className="p-2 hover:bg-reddishpink w-full">
+              <div className="flex items-center justify-center gap-4 font-normal text-base hover:text-white text-slateblue">
                 {item.icon}
                 {item.title}
               </div>
             </li>
           ))}
         </ul>
-        <Button className="bg-pastelblue w-[80%] m-4">Create Session</Button>
+        <Button className="bg-pastelblue w-[70%]">Create Session</Button>
       </div>
     </>
   );
 }
 
- Sidebar;
