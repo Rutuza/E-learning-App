@@ -33,7 +33,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="w-60 h-screen bg-darkprimary flex flex-col overflow-hidden justify-between items-center fixed border-grey border-r-2 rounded-tr-[3.5rem] rounded-br-[3.5rem]">
+      <div className="w-60 h-screen bg-darkprimary flex flex-col overflow-hidden justify-between items-center fixed border-grey border-r-2">
         <h1 className="text-2xl font-medium text-white">Study<span className="text-reddishpink">Room</span></h1>
         <ul className="w-full">
           {Navlinks.map((item, index) => (
