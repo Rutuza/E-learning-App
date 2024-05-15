@@ -10,10 +10,8 @@ export default function Dashboard() {
       <div className="h-[200vh]">
         <Outlet />
       </div>
-      <div>
-        Dashboard
-        <input type="text" />
-      </div>
+      
+      
     </div>
   );
 }
