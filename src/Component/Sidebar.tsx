@@ -45,7 +45,7 @@ export default function Sidebar() {
             </li>
           ))}
         </ul>
-        <Button className="bg-pastelblue w-[70%]">+ Create Session</Button>
+        <Button className="bg-pastelblue w-[70%] hover:bg-transparent hover:border-2 hover:border-pastelblue">+ Create Session</Button>
       </div>
     </>
   );
