@@ -20,17 +20,18 @@ export default function Dashboard() {
         <div className="text-pastelblue font-medium text-2xl">Dashboard</div>
         <input type="text" placeholder="Search for courses, lectures, tutorials..." className="h-[3%] rounded-full"/>
         <div className="flex gap-4 cursor-pointer">
-          <div className="w-12 h-12 bg-darkprimary rounded-full text-white flex justify-center items-center"><HiBellAlert /></div>
+          <div className="w-12 h-12 bg-darkprimary rounded-full text-white flex justify-center items-center"><HiBellAlert/></div>
           <div className="w-12 h-12 bg-darkprimary rounded-full text-white flex justify-center items-center"><RiSettings5Fill /></div>
           <div className="w-12 h-12 bg-darkprimary rounded-full text-white flex justify-center items-center"><AiFillQuestionCircle /></div>
-          
         </div>
       </header>
 
-      <div className="">
-        <div>Welcome back, Ritu</div>
-        <div></div>
-      </div>
+      <section className="container">
+        <div>
+          <div>Welcome back, Ritu</div>
+          <div>you are doing great, keep it up...</div>
+        </div>
+      </section>
       
     </div>
   );
